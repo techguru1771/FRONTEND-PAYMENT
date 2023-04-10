@@ -1,0 +1,360 @@
+body{
+    padding: 0;
+    box-sizing:  border-box ;
+    margin: 0;
+    /* background-color: rgb(14, 13, 13); */
+    background-color: grey;
+
+
+}
+
+.wrapper-gene{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* background-color: grey; */
+    overflow: hidden;
+}
+.container2{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    perspective: 500px;
+    animation: rotate-1 20s linear infinite;
+    margin-top: 90px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+}
+.box{
+    margin: 5rem auto;
+    width: 10%;
+    align-items: center;
+    transform: rotate(270deg);
+}
+.box .dna{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    color: rgb(18, 18, 18);
+    font-weight: 500;
+    font-family: 'Times New Roman', Times, serif;
+    width: 200px;
+    height:16px;
+    margin: 2px 0;
+    margin-top: 15px;
+    background: linear-gradient(0deg, transparent 0%, transparent 50.5%, #2a6ae9 50%, transparent 60%,  transparent 100% );
+    animation: rotate-2 2s linear infinite, hue 2s linear infinite;
+}
+.dna:before{
+    content: '';
+    position: relative;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    display: block;
+    background: #fff;
+    box-shadow: 0 0 10px 2px #2a6ae9, 0 0 0 1px #000;
+    animation-delay: 1s;
+}
+.dna:after{
+    content: '';
+    position: relative;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    display: block;
+    background: #fff;
+    box-shadow: 0 0 10px 2px #2a6ae9, 0 0 0 1px #000;
+}
+.dna:nth-child(1){
+    animation-delay: 0s;
+}
+.dna:nth-child(2){
+    animation-delay: -.1s;
+}
+.dna:nth-child(3){
+    animation-delay: -.2s;
+}
+.dna:nth-child(4){
+    animation-delay: -.3s;
+}
+.dna:nth-child(5){
+    animation-delay: -.4s;
+}
+.dna:nth-child(6){
+    animation-delay: -.5s;
+}
+.dna:nth-child(7){
+    animation-delay: -.6s;
+}
+.dna:nth-child(8){
+    animation-delay: -.7s;
+}
+.dna:nth-child(9){
+    animation-delay: -.8s;
+}
+.dna:nth-child(10){
+    animation-delay: -.9s;
+}
+.dna:nth-child(11){
+    animation-delay: -1.0s;
+}
+.dna:nth-child(12){
+    animation-delay: -1.1s;
+}
+.dna:nth-child(13){
+    animation-delay: -1.2s;
+}
+.dna:nth-child(14){
+    animation-delay: -1.3s;
+}
+.dna:nth-child(15){
+    animation-delay: -1.4s;
+}
+.dna:nth-child(16){
+    animation-delay: -1.5s;
+}
+.dna:nth-child(17){
+    animation-delay: -1.6s;
+}
+.dna:nth-child(18){
+    animation-delay: -1.7s;
+}
+.dna:nth-child(19){
+    animation-delay: -1.8s;
+}
+.dna:nth-child(20){
+    animation-delay: -1.9s;
+}
+.dna:nth-child(21){
+    animation-delay: -2.0s;
+}
+.dna:nth-child(22){
+    animation-delay: -2.1s;
+}
+.dna:nth-child(23){
+    animation-delay: -2.2s;
+}
+.dna:nth-child(24){
+    animation-delay: -2.3s;
+}
+.dna:nth-child(25){
+    animation-delay: -2.4s;
+}
+.dna:nth-child(26){
+    animation-delay: -2.5s;
+}
+.dna:nth-child(27){
+    animation-delay: -2.6s;
+}
+.dna:nth-child(28){
+    animation-delay: -2.7s;
+}
+.dna:nth-child(29){
+    animation-delay: -2.8s;
+}
+.dna:nth-child(30){
+    animation-delay: -2.9s;
+}
+@keyframes rotate-1
+{
+    0%{
+        transform: rotate(0deg) ;
+    }
+    100%{
+        
+    }
+}
+@keyframes rotate-2
+{
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
+@keyframes hue
+{
+    0%
+    {
+        filter: hue-rotate(0deg);
+    }
+    100%
+    {
+        filter: hue-rotate(360deg);
+    }
+}
+.container{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20rem;
+}
+.main{
+    color:rgb(234, 234, 234);
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+.pure{
+    
+    font-family: 'Times New Roman', Times, serif;
+    height: auto;
+    line-height: 1.2;
+    
+}
+
+.purelife{
+font-family: 'Times New Roman', Times, serif;
+letter-spacing: 2.5px;
+font-weight: bolder;
+text-align: center;
+font-size:30px;
+color: wheat;
+
+}
+
+.btnn{
+    width: 160px;  
+   height: 40px;
+   background: wheat;
+   border: none;
+   margin-left: 30px;
+   padding-left:10px ;
+   font-size: 20px;
+   font-weight: bolder;
+   border-radius: 10px;
+   cursor: pointer;
+   margin-top: 50px;
+   font-family: 'Times New Roman', Times, serif;
+   padding: 10px;
+   color: black;
+
+}
+.reel{
+    /* margin-left: 50px; */
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+a{
+   text-decoration: none;
+   color: black;
+   transition: 4s ease-in;
+   
+}
+
+
+.btnn:hover{
+   /* animation:alternate-reverse;
+   animation-duration: initial;
+   animation-play-state: running;
+   animation-timing-function: cubic-bezier(5, 1, 3, 1);
+   font-size:15px;
+   background: #00ff2a;
+   transition: 2s ease-in-out;
+   border-radius: 50px; */
+   text-decoration: none;
+
+}
+
+.glot{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 50px;
+    /* padding-right: 190px; */
+}
+.webs:hover{
+    color:rgb(12, 158, 12);
+    /* font-size: 50px; */
+    transition:3s ease-in-out;
+    /* transition-duration: 3s; */
+    /* animation: forwards; */
+    animation-play-state: running;
+    animation-timing-function: cubic-bezier(5, 1, 3, 1);
+   animation-duration: initial;
+   animation:alternate-reverse;
+
+
+}
+.webs{
+    font-size: 60px;
+    color: wheat;
+}
+
+.purelife:hover{
+    color:rgb(12, 158, 12);
+    /* font-size: 20px; */
+    transition:3s ease-in-out;
+    animation-play-state: running;
+   animation:alternate-reverse;
+   animation-timing-function: cubic-bezier(5, 1, 3, 1);
+
+}
+    /* desktop */
+@media screen and (max-width: 1035px) {
+    .wrapper-gene{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+}
+@media screen and (max-width: 915px){
+    .wrapper-gene{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+}
+@media screen and (max-width: 850px) {
+    .wrapper-gene{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+    .webs{
+        text-align: center;
+        font-size: 45px;
+    }
+    .purelife{
+        font-size: 25px;
+    }
+    .btnn{
+        font-size: 20px;
+    }
+    .box .dna{
+        width: 150px;
+        height: 20px;
+    }
+    .box{
+        margin-top: 0rem ;
+        width: 10%;
+        margin-left: 500px;
+        margin-right: 90px;
+        
+    }
+    .dna{
+        margin: 0px;
+    }
+}
+@media screen  and (max-width:480px){
+    .box{
+        margin: 5rem 10rem;
+        width: 10%;
+        align-items: center;
+        transform: rotate(360deg);
+        
+    }
+    
+}

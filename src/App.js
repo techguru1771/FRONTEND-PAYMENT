@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
+import Login from './pages/Login'
+import Register from './pages/Register'
+import Genetics from './pages/Genetics'
+import PaystackIntegation from './components/PaystackIntegation'
+import Contact from './components/Contact'
+import About from './components/About'
+import Welcome from './pages/Welcome'
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Router>
+      <Routes>
+        <Route path='/' element={<Genetics/>}/>
+        <Route path='/Login' element={<Login/>}/>
+        <Route path= '/Welcome' element ={<Welcome/>}/>
+        <Route path= '/Register' element={<Register/>}/>
+        <Route path= '/Contact' element={<Contact/>}/>
+        <Route path='/About' element={<About/>}/>
+        <Route path='/paymentgateway' element={<PaystackIntegation/>}/>
+      </Routes>
+    </Router>
+    
+  )
 }
 
-export default App;
+export default App
